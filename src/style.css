@@ -1,18 +1,38 @@
+.body{
+    background-color: rgba(34, 33, 32, 0.542);
+}
+/* <<<<<<<<<<<BUS BODY>>>>>>>>>>>>> */
+
 .conteiner{
     width: 400px;
-    height: 150px;
-    background-color: red;
+    height: 90px;
+    background-color:red;
     top: 50%;
-    border-top-right-radius: 50%;
-    border-top-left-radius: 50%;
+    border-top-right-radius: 3rem;
+    border-top-left-radius: 2rem;
     
 }
+
 .middle{
     width: 500px;
-    height: 150px;
-    background-color: red;
-    top: 50%;
+    height: 120px;
+    background-color:red;
+    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius: 0.5rem;
+    
+    
 }
+.bus1{
+    animation-name: bus1;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+/* >>>>>>>>>>wheel<<<<<<<<<<<<< */
+
 .wheel{
     width: 50px;
     height:50px;
@@ -27,14 +47,15 @@
     animation-duration: 2s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    top: 179%;
+    top: 210%;
     left:14%;
     
 }
+
 .wheel:nth-child(2){
-    position: absolute;
-    top: 29.5%;
-    left: 20%;
+    position: relative;
+    top: 125%;
+    left: 85%;
 }
 .center{
     position: absolute;
@@ -65,6 +86,80 @@
     transform: rotate(135deg);
 }
 
+/* >>>>>>>>>>>>>>>window<<<<<<<<<<<<<<< */
+
+.window{
+    position: absolute;
+    width: 70px;
+    height: 60px;
+    background-color: white;
+    top:20px;
+    left: 20px;
+    border-top-left-radius: 1.5rem;
+}
+.window2{
+    position: absolute;
+    width: 70px;
+    height: 60px;
+    background-color:white;
+    top:20px;
+    left:95px;
+    
+}
+.window3{
+    position: absolute;
+    width: 70px;
+    height: 60px;
+    background-color: white;
+    top: 20px ;
+    left: 170px;
+    
+}
+.window4{
+    position: absolute;
+    width: 70px;
+    height: 60px;
+    background-color: white;
+    top:20px ;
+    left:245px;
+    
+}
+.window5{
+    position: absolute;
+    width: 70px;
+    height: 60px;
+    background-color: white;
+    top:20px;
+    left:320px;
+    border-top-right-radius: 1.5rem;
+}
+
+
+/* <<<P>>> */
+
+p{
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    top: 1px;
+    text-align:center;
+}
+
+/* ===================== */
+
+.road{
+    background-color: black;
+    width: 100%;
+    height: 20px;
+    margin-top: 200px;
+}
+
+
+
+/* 
+>>>>>>>>>  frames <<<<<<<<< */
+
+
 @keyframes wheel {
     0%{
         transform: rotate(0deg);
@@ -72,7 +167,11 @@
     100%{    transform: rotate(360deg);
     }
 }
-
-
-
-
+@keyframes bus1 {
+    0% {
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(102%);
+    }
+}
