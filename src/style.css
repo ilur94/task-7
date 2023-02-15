@@ -11,8 +11,17 @@
     border-top-right-radius: 3rem;
     border-top-left-radius: 2rem;
     
+    
 }
-
+.conteiner2{
+    width: 400px;
+    height: 90px;
+    background-color: blue ;
+    top: 50%;
+    margin-left: 100px;
+    border-top-right-radius: 3rem;
+    border-top-left-radius: 2rem;
+}
 .middle{
     width: 500px;
     height: 120px;
@@ -23,13 +32,30 @@
     
     
 }
+.middle2{
+    width: 500px;
+    height: 120px;
+    background-color:blue;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 2rem;
+
+}
 .bus1{
     animation-name: bus1;
     animation-duration: 5s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+    
+    
 }
-
+.bus2{
+    margin-top: 100px;
+    animation-name: bus2;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
 
 /* >>>>>>>>>>wheel<<<<<<<<<<<<< */
 
@@ -57,6 +83,29 @@
     top: 125%;
     left: 85%;
 }
+.wheel2{
+    width: 50px;
+    height:50px;
+    border: 10px solid black;
+    border-radius: 50%;
+    position: relative;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    animation-name: wheel2;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    top: 200%;
+    
+}
+.wheel2:nth-child(2){
+    position: relative;
+    top: 125%;
+    left: 70%;
+}
+
 .center{
     position: absolute;
     width: 30px;
@@ -67,7 +116,16 @@
     border-radius: 50%;
     align-items: center;
 }
-
+.center2{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    top: 20%;
+    left: 20%;
+    border-radius: 50%;
+    align-items: center;
+}
 .line{
     position: absolute;
     width: 100%;
@@ -85,7 +143,23 @@
 .line:nth-child(4){
     transform: rotate(135deg);
 }
-
+.line2{
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    top: 48%;
+}
+.line2:nth-child(2){
+    transform: rotate(45deg
+    );
+}
+.line2:nth-child(3){
+    transform: rotate(90deg);
+}
+.line2:nth-child(4){
+    transform: rotate(135deg);
+}
 /* >>>>>>>>>>>>>>>window<<<<<<<<<<<<<<< */
 
 .window{
@@ -134,6 +208,51 @@
     border-top-right-radius: 1.5rem;
 }
 
+.window2-1{
+    position: absolute;
+    width: 70px;
+    height: 60px;
+    background-color: white;
+    top:20px;
+    left: 105px;
+    border-top-left-radius: 1.5rem;
+}
+.window2-2{
+    position: absolute;
+    width: 70px;
+    height: 60px;
+    background-color:white;
+    top:20px;
+    left:182px;
+    
+}
+.window2-3{
+    position: absolute;
+    width: 70px;
+    height: 60px;
+    background-color: white;
+    top: 20px ;
+    left: 259px;
+    
+}
+.window2-4{
+    position: absolute;
+    width: 70px;
+    height: 60px;
+    background-color: white;
+    top:20px ;
+    left:335px;
+    
+}
+.window2-5{
+    position: absolute;
+    width: 70px;
+    height: 60px;
+    background-color: white;
+    top:20px;
+    left:410px;
+    border-top-right-radius: 1.5rem;
+}
 
 /* <<<P>>> */
 
@@ -141,14 +260,16 @@ p{
     text-align: center;
     font-size: 25px;
     color: white;
-    top: 1px;
-    text-align:center;
+    justify-content: center;
+
+    
+    
 }
 
 /* ===================== */
 
 .road{
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.84);
     width: 100%;
     height: 20px;
     margin-top: 200px;
@@ -173,5 +294,20 @@ p{
     }
     100%{
         transform: translateX(102%);
+    }
+}
+@keyframes bus2 {
+    100% {
+        transform: translateX(0);
+    }
+    0%{
+        transform: translateX(102%);
+    }
+}
+@keyframes wheel2 {
+    100%{
+        transform: rotate(0deg);
+    }
+    0%{    transform: rotate(360deg);
     }
 }
